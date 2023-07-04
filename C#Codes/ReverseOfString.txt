@@ -1,0 +1,22 @@
+using System;
+public class ReverseDemo
+{
+public static void Main(String[] args)
+{
+	String s1 = "Hello World";
+	Console.WriteLine(s1);
+	ReverseDemo d = new ReverseDemo();
+	Console.WriteLine(d.ReverseStringMethod(s1));	
+}
+	public string ReverseStringMethod(String s)
+	{
+		char[] char1 = new Char[s.Length];
+		for(int i=0,j=s.Length-1;i<=j;i++,j--)
+		{
+			char1[i]=s[j];
+			char1[j]=s[i];
+		}
+		return new String(char1);
+	}
+	
+}
