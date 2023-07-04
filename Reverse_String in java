@@ -1,6 +1,10 @@
  public static void main (String[] args) {
        
+ java-codes
         String str= "Gks", nstr="";
+
+        String str= "Geeks", nstr="";
+ main
         //char ch;
        
       System.out.print("Original word: ");
