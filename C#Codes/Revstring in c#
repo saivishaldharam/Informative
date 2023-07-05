@@ -1,0 +1,16 @@
+using System;
+
+public class Program
+{
+    public static void Main()
+    {
+        string str = "yash";
+        int length = str.Length-1;
+        string revstring= "";
+        while(length>=0)
+        {
+            revstring=revstring+str[length];
+            length--;
+        }
+        Console.WriteLine(revstring);
+    }
