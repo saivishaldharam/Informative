@@ -1,0 +1,6 @@
+ITakesScreenshot screenshotDriver = (ITakesScreenshot)driver;
+Screenshot screenshotInstance = screenshotDriver.GetScreenshot();
+string timestamp = DateTime.Now.ToString("yyyyMMddHHmmss");
+string fileName = $"screenshot_{timestamp}.png";
+string path = @"C:\Users\ProjectFolder1\ScreenshotsFolder\" + fileName;
+screenshotInstance.SaveAsFile(path, ScreenshotImageFormat.Png);
