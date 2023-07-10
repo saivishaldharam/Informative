@@ -1,0 +1,32 @@
+[27-06 11:31] Yashwanth Shamala
+
+using System;
+
+
+public class Program
+
+{
+
+    public static void Main()
+
+    {
+
+
+        String str= "Yashwanth";
+
+        char[] stringarray = str.ToCharArray();
+
+        Array.Reverse(stringarray);
+
+        String Updated = new String(stringarray);
+
+        Console.WriteLine("the updated rev string is : {0}", Updated);
+
+
+
+
+        //Console.WriteLine("Hello World");
+
+    }
+
+}
